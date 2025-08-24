@@ -6,65 +6,60 @@ const links = [
 ];
 ---
 
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Susana García — CV</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body style="font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; line-height: 1.6;">
-    <header>
-      <h1 style="margin:0">Susana García</h1>
-      <p style="margin-top:4px;color:#555">Formadora en inteligencia artificial · Autora</p>
-      <nav style="margin-top:8px">
-        {links.map(l => <a style="margin-right:12px" href={l.href} target="_blank">{l.label}</a>)}
-      </nav>
-      <hr style="margin:24px 0" />
-    </header>
+<head>
+  <title>Susana García — CV</title>
+</head>
 
-    <section>
-      <h2>Resumen</h2>
-      <p>
-        Formadora en IA para empresas, universidades y administraciones públicas.
-        Enfoque práctico: fundamentos claros + herramientas listas para usar + proyectos aplicados.
-      </p>
-      <p><em>EN:</em> AI instructor for companies, universities and the public sector. Clear fundamentals, ready-to-use tools and applied projects.</p>
-    </section>
+<main style="font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; line-height: 1.6;">
+  <header>
+    <h1 style="margin:0">Susana García</h1>
+    <p style="margin-top:4px;color:#555">Formadora en inteligencia artificial · Autora</p>
+    <nav style="margin-top:8px">
+      {links.map(l => <a style="margin-right:12px" href={l.href} target="_blank">{l.label}</a>)}
+    </nav>
+    <hr style="margin:24px 0" />
+  </header>
 
-    <section>
-      <h2>Experiencia</h2>
-      <h3>Formadora en IA — 1012.es (2022–actualidad)</h3>
-      <ul>
-        <li>Programas intensivos (5h) y academias corporativas.</li>
-        <li>Casos reales, automatizaciones y seguridad/privacidad.</li>
-      </ul>
+  <section>
+    <h2>Resumen</h2>
+    <p>
+      Formadora en IA para empresas, universidades y administraciones públicas.
+      Enfoque práctico: fundamentos claros + herramientas listas para usar + proyectos aplicados.
+    </p>
+    <p><em>EN:</em> AI instructor for companies, universities and the public sector. Clear fundamentals, ready-to-use tools and applied projects.</p>
+  </section>
 
-      <h3>Autora — “IA desde cero” y obra técnica (2023–2025)</h3>
-      <ul>
-        <li>Libro introductorio + libro técnico de ~700 páginas.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Experiencia</h2>
+    <h3>Formadora en IA — 1012.es (2022–actualidad)</h3>
+    <ul>
+      <li>Programas intensivos (5h) y academias corporativas.</li>
+      <li>Casos reales, automatizaciones y seguridad/privacidad.</li>
+    </ul>
 
-    <section>
-      <h2>Educación y certificaciones</h2>
-      <ul>
-        <li>Lic. en CC Económicas y Empresariales</li>
-        <li>Python for Data Science</li>
-        <li>Inglés C1 (2025)</li>
-      </ul>
-    </section>
+    <h3>Autora — “IA desde cero” y obra técnica (2023–2025)</h3>
+    <ul>
+      <li>Libro introductorio + libro técnico de ~700 páginas.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>Email: <a href="mailto:garciasusana@gmail.com">garciasusana@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/garciasusana/" target="_blank">/in/garciasusana</a> · GitHub: <a href="https://github.com/garciasusana" target="_blank">@garciasusana</a></p>
-    </section>
+  <section>
+    <h2>Educación y certificaciones</h2>
+    <ul>
+      <li>Lic. en CC Económicas y Empresariales</li>
+      <li>Python for Data Science</li>
+      <li>Inglés C1 (2025)</li>
+    </ul>
+  </section>
 
-    <footer style="margin-top:24px;color:#777">
-      © {new Date().getFullYear()} Susana García
-    </footer>
-  </body>
-</html>
+  <section>
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:garciasusana@gmail.com">garciasusana@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/garciasusana/" target="_blank">/in/garciasusana</a> · GitHub: <a href="https://github.com/garciasusana" target="_blank">@garciasusana</a></p>
+  </section>
 
+  <footer style="margin-top:24px;color:#777">
+    © {new Date().getFullYear()} Susana García
+  </footer>
+</main>
 
